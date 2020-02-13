@@ -1,0 +1,117 @@
+==================================================================================
+----------------------SKENARIO TESTING KADE FOOTBALL MATCH------------------------
+==================================================================================
+UNIT TEST {
+A. API SERVICES TEST(
+1. test fun getNextMatch
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+2. test fun getLastMatch
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+3. test fun getDetailLeague
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+4. test fun getDetailMatch
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+5. test fun getTeamBadge
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+6. test fun getSearchMatch
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+7. test fun getAllTeams
+-memasukkan ekspektasi url request ke server
+-memasukkan actual url yang di request dari aplikasi ke server
+-memverifikasi antara ekspektasi dan actual harus sama responnya
+)
+B. LEAGUE PRESENTER TEST(
+1. fun getDetailLaguage
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showDetailLeague berjalan
+-memastikan fun hideLoading berjalan
+)
+C. MAIN PRESENTER TEST(
+1. fun getNextMatch
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showMatchList berjalan
+-memastikan fun hideLoading berjalan
+2. fun getLastMatch
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showMatchList berjalan
+-memastikan fun hideLoading berjalan
+3. fun getSearch
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showMatchList berjalan
+-memastikan fun hideLoading berjalan
+)
+D. MATCH PRESENTER TEST(
+1. fun getDetailMatch
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showDetailMatch berjalan
+-memastikan fun hideLoading berjalan
+2. fun getShowTeamBadgeHome
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showTeamBadgeHome berjalan
+-memastikan fun hideLoading berjalan
+3. fun getShowTeamBadgeAway
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showTeamBadgeAway berjalan
+-memastikan fun hideLoading berjalan
+)
+E. TEAMS PRESENTER TEST(
+1. fun getListTeams
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showListTeam berjalan
+-memastikan fun hideLoading berjalan
+2. fun getDetailTeam
+-memanggil fungsi doRequest dengan when dan memastikan mengembalikan nilai variable apiResponse
+-memanggil variable apiResponse dengan when, apakah mengembalikan nilai yang sesuai
+-memanggil fungsi response json di cocokan dengan variable response yang telah di deklarasikan
+-memastikan fun showLoading berjalan
+-memastikan fun showListTeam berjalan
+-memastikan fun hideLoading berjalan
+)
+}
+
+INSTRUMENTATION TEST{
+1. fun testSearch
+-mengecek apakah view dengan id search_view sudah di tampilkan
+-melakukan klik di view dengan id search_view
+-melakukan input query text "Arsenal" pada view dengan id search_view dan melakukan pencarian
+-mengecek apakah view dengan id rv_search sudah tampil, jika sudah akan dilakukan klik pada item index ke 1
+-mengecek apakah view dengan id favorite sudah ditampilkan
+-melakukan klik view dengan id favorite
+-menekan tombol kembali
+}
